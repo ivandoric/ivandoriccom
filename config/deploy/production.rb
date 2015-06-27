@@ -1,3 +1,6 @@
+set :stage, :production
+server '46.101.253.20', user: 'deploy', roles: %w{web app}
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
