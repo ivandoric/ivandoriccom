@@ -1,0 +1,34 @@
+.introduction{
+    position: relative;
+    padding:100px 0;
+    background: url(nature.jpg) no-repeat center center;
+    background-size: cover;
+    
+    .overlay{
+        position: absolute;
+        width:100%;
+        height:100%;
+        z-index:0;
+        top:0;
+        left:0;
+        background: rgba(black, .6);
+    }
+
+    h2{
+        position: relative;
+        z-index:1;
+        color:#fff;
+        text-align: center;
+        @extend .medium;
+    }
+}
+
+.works{
+    h3{
+        color:#ccc;
+        text-align: center;
+        margin:50px 0;
+        
+        @extend .light;
+    }
+}

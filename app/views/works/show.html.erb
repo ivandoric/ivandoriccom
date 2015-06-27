@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+test
+<p>
+  <strong>Title:</strong>
+  <%= @work.title %>
+</p>
+
+<p>
+  <strong>Intro:</strong>
+  <%= @work.intro %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @work.body %>
+</p>
+
+<p>
+  <strong>Design:</strong>
+  <%= @work.design %>
+</p>
+
+<p>
+  <strong>Technologies:</strong>
+  <%= @work.technologies %>
+</p>
+
+<%= image_tag @work.main_image.url %>
+
+<% @work.slides.each do |slide| %>
+    <%= image_tag slide.image.url %>
+<% end %>
+<br>
+<%= link_to 'Edit', edit_work_path(@work) %> |
+<%= link_to 'Back', works_path %>

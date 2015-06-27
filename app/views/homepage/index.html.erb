@@ -1,0 +1,36 @@
+<div class="introduction">
+    <div class="overlay"></div>
+    <div class="container clearfix">
+        <h2>Hello, my name is Ivan, I'm a frontend developer and designer</h2>
+    </div>
+</div>
+
+<div class="section about">
+    <div class="container smaller">
+        <p>Hey there,</p>
+        <p>
+            my name is Ivan Dorić, from Croatia. I've been a web designer/designer/frontend developer for more than 10 years now.
+            I currently work at <a href="http://gauss-development.com">Gauss Development</a> where I lead a team of frontend developers.
+        </p>
+
+        <p>
+            
+        </p>
+    </div>
+</div>
+
+<section class="works section">
+    <div class="container clearfix">
+        <h3>Check out some of my work</h3>
+        <% @works.take(5).each do |work| %>
+            <%= link_to work do  %>
+                <h2><%= work.title %></h2>
+            <% end %>
+
+            <%= image_tag(work.main_image) %>
+        <% end %>    
+    </div>
+</section>
+
+    
+
